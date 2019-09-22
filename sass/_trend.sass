@@ -1,0 +1,220 @@
+.trend
+    &-block
+        display: flex
+        &__sneakers
+            margin-top: 50px
+            background: url('../img/trend/cross-1.png') no-repeat
+            width: 540px
+            &:hover
+                cursor: pointer
+                transform: scale(1.1)
+                transition: 1s
+        &__header
+            display: flex
+            align-items: center
+            padding-top: 10px
+        &__logo
+            margin-left: 10px
+        &__name
+            display: flex
+            flex-direction: column
+            text-align: center
+            margin-left: 68px
+        &__text
+            color: #ffffff
+            font-family: "Trueno Lt"
+            font-size: 30px
+            font-weight: 400
+        &__title
+            font-size: 30px
+            font-weight: 400
+            color: #4bd8cd
+            font-family: "Trueno Bd"   
+        &__btn
+            margin-top: 339px 
+            margin-left: 165px
+            margin-bottom: 35px
+            border: none
+            padding: 17px 30px
+            background-color: #4bd8cd
+            color: #000000
+            font-family: "Trueno Bd"
+            font-size: 16px
+            font-weight: 400
+            line-height: 26px
+            text-transform: uppercase
+            &:hover
+                cursor: pointer
+        &__right
+            margin-left: 30px
+        &__head
+            margin-top: 50px
+            width: 540px
+            height: 255px
+            background-color: #ff7373
+            display: flex
+            &:hover
+                cursor: pointer
+                transform: scale(1.1)
+                transition: 1s
+        
+    &-discover
+        &__block
+            margin-top: 50px
+            margin-left: 20px
+            text-align: center
+        &__img
+            margin-top: -20px
+        &__text
+            color: #ffffff
+            font-family: "Trueno Lt"
+            font-size: 30px
+            font-weight: 400
+        &__title
+            color: #ffffff
+            font-size: 30px
+            font-weight: 400
+            font-family: "Trueno Bd"
+        &__btn
+            margin-top: 30px
+            padding: 17px 30px
+            color: #ffffff
+            font-family: "Trueno Bd"
+            font-size: 16px
+            font-weight: 400
+            line-height: 26px
+            text-transform: uppercase
+            border: none
+            background-color: #623232
+            &:hover
+                cursor: pointer
+    
+    &-block
+        &__footer
+            display: flex
+        &__athletes
+            width: 255px
+            margin-top: 30px
+            text-align: center
+            background: url('../img/trend/cross-3.png') no-repeat
+            &:hover
+                cursor: pointer
+                transform: scale(1.1)
+                transition: 1s
+                
+    &-athletes
+        &__text
+            margin-top: 146px
+            color: #ffffff
+            font-family: "Trueno Lt"
+            font-size: 30px
+            font-weight: 400
+        &__title
+            margin-bottom: 50px
+            color: #ff7373
+            font-family: "Trueno Bd"
+            font-size: 30px
+            font-weight: 400
+            text-transform: uppercase
+    
+    &-block
+        &__premium
+            background: url('../img/trend/cross-4.png') no-repeat
+            text-align: center
+            margin-left: 30px
+            margin-top: 30px
+            width: 255px
+            &:hover
+                cursor: pointer
+                transform: scale(1.1)
+                transition: 1s
+    &-premium
+        &__text
+            margin-top: 34px
+            font-family: "Trueno Lt"
+            font-size: 30px
+            font-weight: 400
+            color: #6b7072
+        &__title
+            color: #ffffff
+            font-family: "Trueno Bd"
+            font-size: 30px
+            font-weight: 400
+            text-transform: uppercase
+            margin-bottom: 162px
+
+
+@media (max-width: 1110px)
+    .trend
+        &-block
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            &__sneakers
+                background-size: inherit
+            &__btn
+                margin-left: 95px
+            &__header
+                padding-top: 0px
+            &__logo
+                margin-left: 0px
+            &__name
+                margin-left: 10px
+
+
+
+@media (max-width: 768px)
+    .trend
+        &-block
+            &__sneakers
+                width: 410px
+            &__right
+                margin-left: 0px
+                margin-top: 30px
+            &__head
+                width: 410px
+                margin: auto
+        &-discover
+            &__text
+                font-size: 20px
+            &__title
+                font-size: 20px
+            &__btn
+                margin-top: 15px
+        &-block
+            &__footer
+                flex-direction: column
+                justify-content: center
+                align-items: center
+            &__premium
+                margin-left: 0px
+
+
+@media (max-width: 425px)
+    .trend
+        &-block
+            &__sneakers
+                width: 300px
+                margin-top: 20px
+            &__btn
+                margin-left: 50px
+            &__text
+                font-size: 20px
+            &__btn
+                margin-top: 220px
+                background-color: rgba(75,216,205, 0.8)
+            &__head
+                width: 300px
+        &-discover
+            &__img
+                margin-left: -40px
+            &__block
+                margin-left: 0px
+            &__text
+                margin-left: -70px
+            &__title
+                font-size: 18px
+                margin-left: -30px
+            &__btn
+                margin-top: 80px
+                margin-left: -20px

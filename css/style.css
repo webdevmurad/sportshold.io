@@ -369,6 +369,10 @@
   }
 }
 
+.presentation {
+  display: none;
+}
+
 .presentation-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -471,6 +475,324 @@
 @media (max-width: 425px) {
   .presentation-text__description {
     width: 300px;
+  }
+}
+
+.trend-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.trend-block__sneakers {
+  margin-top: 50px;
+  background: url("../img/trend/cross-1.png") no-repeat;
+  width: 540px;
+}
+
+.trend-block__sneakers:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.trend-block__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+}
+
+.trend-block__logo {
+  margin-left: 10px;
+}
+
+.trend-block__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-left: 68px;
+}
+
+.trend-block__text {
+  color: #ffffff;
+  font-family: "Trueno Lt";
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.trend-block__title {
+  font-size: 30px;
+  font-weight: 400;
+  color: #4bd8cd;
+  font-family: "Trueno Bd";
+}
+
+.trend-block__btn {
+  margin-top: 339px;
+  margin-left: 165px;
+  margin-bottom: 35px;
+  border: none;
+  padding: 17px 30px;
+  background-color: #4bd8cd;
+  color: #000000;
+  font-family: "Trueno Bd";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.trend-block__btn:hover {
+  cursor: pointer;
+}
+
+.trend-block__right {
+  margin-left: 30px;
+}
+
+.trend-block__head {
+  margin-top: 50px;
+  width: 540px;
+  height: 255px;
+  background-color: #ff7373;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.trend-block__head:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.trend-discover__block {
+  margin-top: 50px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.trend-discover__img {
+  margin-top: -20px;
+}
+
+.trend-discover__text {
+  color: #ffffff;
+  font-family: "Trueno Lt";
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.trend-discover__title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Trueno Bd";
+}
+
+.trend-discover__btn {
+  margin-top: 30px;
+  padding: 17px 30px;
+  color: #ffffff;
+  font-family: "Trueno Bd";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #623232;
+}
+
+.trend-discover__btn:hover {
+  cursor: pointer;
+}
+
+.trend-block__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.trend-block__athletes {
+  width: 255px;
+  margin-top: 30px;
+  text-align: center;
+  background: url("../img/trend/cross-3.png") no-repeat;
+}
+
+.trend-block__athletes:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.trend-athletes__text {
+  margin-top: 146px;
+  color: #ffffff;
+  font-family: "Trueno Lt";
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.trend-athletes__title {
+  margin-bottom: 50px;
+  color: #ff7373;
+  font-family: "Trueno Bd";
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.trend-block__premium {
+  background: url("../img/trend/cross-4.png") no-repeat;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 255px;
+}
+
+.trend-block__premium:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.trend-premium__text {
+  margin-top: 34px;
+  font-family: "Trueno Lt";
+  font-size: 30px;
+  font-weight: 400;
+  color: #6b7072;
+}
+
+.trend-premium__title {
+  color: #ffffff;
+  font-family: "Trueno Bd";
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 162px;
+}
+
+@media (max-width: 1110px) {
+  .trend-block {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .trend-block__sneakers {
+    background-size: inherit;
+  }
+  .trend-block__btn {
+    margin-left: 95px;
+  }
+  .trend-block__header {
+    padding-top: 0px;
+  }
+  .trend-block__logo {
+    margin-left: 0px;
+  }
+  .trend-block__name {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trend-block__sneakers {
+    width: 410px;
+  }
+  .trend-block__right {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .trend-block__head {
+    width: 410px;
+    margin: auto;
+  }
+  .trend-discover__text {
+    font-size: 20px;
+  }
+  .trend-discover__title {
+    font-size: 20px;
+  }
+  .trend-discover__btn {
+    margin-top: 15px;
+  }
+  .trend-block__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .trend-block__premium {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 425px) {
+  .trend-block__sneakers {
+    width: 300px;
+    margin-top: 20px;
+  }
+  .trend-block__btn {
+    margin-left: 50px;
+  }
+  .trend-block__text {
+    font-size: 20px;
+  }
+  .trend-block__btn {
+    margin-top: 220px;
+    background-color: rgba(75, 216, 205, 0.8);
+  }
+  .trend-block__head {
+    width: 300px;
+  }
+  .trend-discover__img {
+    margin-left: -40px;
+  }
+  .trend-discover__block {
+    margin-left: 0px;
+  }
+  .trend-discover__text {
+    margin-left: -70px;
+  }
+  .trend-discover__title {
+    font-size: 18px;
+    margin-left: -30px;
+  }
+  .trend-discover__btn {
+    margin-top: 80px;
+    margin-left: -20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
