@@ -369,10 +369,6 @@
   }
 }
 
-.presentation {
-  display: none;
-}
-
 .presentation-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,14 +376,13 @@
 }
 
 .presentation-block__img {
-  position: absolute;
-  bottom: 17%;
+  margin-top: -85px;
 }
 
 .presentation-block__text {
   position: absolute;
+  top: 30%;
   right: 25%;
-  top: 33%;
 }
 
 .presentation-text__price {
@@ -794,5 +789,138 @@
     margin-top: 80px;
     margin-left: -20px;
   }
+}
+
+.goods-block__text {
+  padding-left: 29px;
+  padding-right: 40px;
+  margin-bottom: 30px;
+}
+
+.goods-block__title {
+  color: #8a8784;
+  font-family: "Trueno Bd";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.goods-block__descr {
+  color: #8a8784;
+  font-family: "Trueno Lt";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.goods-block__id {
+  color: #bdb9b5;
+  font-family: "Trueno Lt";
+  font-size: 13px;
+}
+
+.goods-choices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.goods-choice {
+  margin-right: 40px;
+  color: #bdb9b5;
+  font-family: "Trueno Lt";
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.goods-choice:last-child {
+  margin-right: 0px;
+}
+
+.goods-choice:hover {
+  cursor: pointer;
+  color: #623232;
+  font-family: "Trueno Bd";
+}
+
+.goods-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.goods-sneakers {
+  position: relative;
+  width: 255px;
+  border: 1px solid #e0dfde;
+  margin-right: 19px;
+  margin-top: 30px;
+}
+
+.goods-sneakers:hover {
+  cursor: pointer;
+}
+
+.goods-cost {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 8%;
+  width: 100%;
+}
+
+.goods-price {
+  margin-left: 29px;
+  position: relative;
+}
+
+.goods-price__new {
+  color: #ff7373;
+  font-family: "Trueno Lt";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.goods-price__old {
+  font-family: "Trueno Lt";
+  color: #8a8784;
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+.goods-price__sale {
+  position: absolute;
+  right: 0;
+  width: 61px;
+  height: 28px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Trueno Bd";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  background-color: #ff7373;
+}
+
+.goods-old__price {
+  margin-left: 29px;
+  color: #8a8784;
+  font-family: "Trueno Lt";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.goods-sneaker {
+  margin: 28px 28px 0px 28px;
 }
 /*# sourceMappingURL=style.css.map */
