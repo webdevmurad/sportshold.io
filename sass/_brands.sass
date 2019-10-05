@@ -1,0 +1,26 @@
+.brands
+    &-block
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 100px
+        margin-bottom: 100px
+
+
+.brand
+    &-block
+        margin-right: 80px
+        &:hover
+            cursor: pointer
+        &:last-child
+            margin-right: 0px
+
+@media (max-width: 1110px)
+    .brands
+        &-block
+            flex-wrap: wrap
+    .brand
+        &-block
+            text-align: center
+            flex-basis: 33%
+            margin: 20px

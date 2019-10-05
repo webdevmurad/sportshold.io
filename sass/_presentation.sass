@@ -9,26 +9,31 @@
             top: 30%
             right: 25%
     &-text
-        &__price
+        &__price p
+            margin: 0
             color: #ff7373
             font-family: "Trueno Lt"
             font-size: 30px
             font-weight: 400
-        &__title
+        &__title h1
+            margin: 0
             margin-top: 10px
             color: #623232
             font-family: "Trueno Bd"
             font-size: 70px
             font-weight: 900
             font-weight: bold
-        &__subtitle
+        &__subtitle h2
+            margin: 0
             margin-top: 10px
             color: #ff7373
             font-family: "Trueno Bd"
             font-size: 50px
             font-weight: 400
         &__description
-            margin-top: 20px
+            padding-bottom: 40px
+        &__description p
+            margin: 0
             width: 420px
             color: #ff7373
             font-family: "Trueno Lt"
@@ -48,12 +53,16 @@
             text-transform: uppercase
             &:hover
                 cursor: pointer
+@media (max-width: 1900px)
+    .presentation
+        &-block
+            &__img 
+                margin-top: 0px
 
 @media (max-width: 1110px)
     .presentation
         &-blocks
             background: url('../img/presentation/cd241c573d94126ea2887de988d9a87a.jpeg') center
-
         &-block
             &__img
                 display: none
@@ -68,6 +77,8 @@
         &-text
             &__description
                 margin: auto
+            &__description p 
+                margin: auto
             &__title
                 color: orange
 
@@ -80,5 +91,13 @@
 @media (max-width: 425px)
     .presentation
         &-text
-            &__description
-                width: 300px
+            &__description p 
+                width: 90%
+            &__title h1 
+                font-size: 48px 
+            &__subtitle h2 
+                font-size: 40px 
+        &-block
+            &__text
+                margin-top: 50px
+                margin-bottom: 50px

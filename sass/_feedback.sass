@@ -1,0 +1,39 @@
+.feedback
+    background-color: #472424
+    &-img
+        filter: grayscale(100%)
+        &:hover
+            cursor: pointer
+            filter: grayscale(0%)
+    &-blocks
+        display: flex
+        justify-content: center   
+        padding-top: 100px 
+    &-block
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        margin-right: 36px
+        &:last-child
+            margin-right: 0px
+    &-star
+        filter: grayscale(40%)
+    &-name
+        color: #A3908F
+        font-family: "Trueno Bd"
+        font-size: 16px
+        font-weight: 400
+        line-height: 26px
+
+.show
+    display: block
+.hide
+    display: none
+
+.active .feedback-img
+    filter: grayscale(0%)
+.active .feedback-name
+    color: #ffffff
+.active .feedback-star
+    filter: grayscale(0%)
