@@ -1185,4 +1185,74 @@
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
 }
+
+.news-block {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.news-block h2 {
+  margin: 0;
+  text-align: center;
+  color: #623232;
+  font-family: "Trueno Bd";
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.news-wrap {
+  margin: 15px;
+  width: 350px;
+}
+
+.news-wrap__com {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news-wrap__first {
+  background: url("../img/news/news-1.png") no-repeat;
+  background-size: cover;
+}
+
+.news-wrap__second {
+  background: url("../img/news/news-2.png") no-repeat;
+  background-size: cover;
+}
+
+.news-wrap__third {
+  background: url("../img/news/news-3.png") no-repeat;
+  background-size: cover;
+}
+
+.news-wrap__text {
+  margin: 230px 103px 30px 30px;
+}
+
+.news-wraps {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news-data {
+  margin: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: "Trueno Bd";
+}
+
+.news-text {
+  margin: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: "Trueno Lt";
+}
 /*# sourceMappingURL=style.css.map */
