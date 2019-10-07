@@ -13,19 +13,41 @@
     &-wrap
         margin: 15px
         width: 350px
+        height: 350px
+        filter: grayscale(.75)
+        transition: 0.5s
+        &:hover
+            filter: none
+            cursor: pointer
+        &:hover .news-wrap__text
+            display: block
         &__com
             display: flex
+            margin-top: 10px
+            &:hover
+                cursor: pointer
+        &__com a
+            margin-left: 10px
+            color: #ff7373
+            font-family: "Trueno Lt"
+            font-size: 13px
+            &:hover
+                border-bottom: 1px solid #ff7373
         &__first
             background: url('../img/news/news-1.png') no-repeat
             background-size: cover
+            background-position: center
         &__second
             background: url('../img/news/news-2.png') no-repeat
             background-size: cover
+            background-position: center
         &__third
             background: url('../img/news/news-3.png') no-repeat
             background-size: cover
+            background-position: center
         &__text
-            margin: 230px 103px 30px 30px
+            display: none
+            margin: 220px 90px 21px 30px
     &-wraps
         margin-top: 30px
         display: flex

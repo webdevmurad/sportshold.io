@@ -1164,6 +1164,50 @@
   line-height: 26px;
 }
 
+.feedback-texts {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+
+.feedback-text__feedback {
+  background-color: rgba(255, 253, 255, 0.1);
+  padding: 47px 52px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Trueno Lt";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.feedback-text__first:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 32.5%;
+  border: 20px solid transparent;
+  border-bottom: 20px solid rgba(255, 253, 255, 0.1);
+}
+
+.feedback-text__second:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 49.8%;
+  border: 20px solid transparent;
+  border-bottom: 20px solid rgba(255, 253, 255, 0.1);
+}
+
+.feedback-text__third:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 65.4%;
+  border: 20px solid transparent;
+  border-bottom: 20px solid rgba(255, 253, 255, 0.1);
+}
+
 .show {
   display: block;
 }
@@ -1204,31 +1248,66 @@
 .news-wrap {
   margin: 15px;
   width: 350px;
+  height: 350px;
+  -webkit-filter: grayscale(0.75);
+          filter: grayscale(0.75);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.news-wrap:hover {
+  -webkit-filter: none;
+          filter: none;
+  cursor: pointer;
+}
+
+.news-wrap:hover .news-wrap__text {
+  display: block;
 }
 
 .news-wrap__com {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 10px;
+}
+
+.news-wrap__com:hover {
+  cursor: pointer;
+}
+
+.news-wrap__com a {
+  margin-left: 10px;
+  color: #ff7373;
+  font-family: "Trueno Lt";
+  font-size: 13px;
+}
+
+.news-wrap__com a:hover {
+  border-bottom: 1px solid #ff7373;
 }
 
 .news-wrap__first {
   background: url("../img/news/news-1.png") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .news-wrap__second {
   background: url("../img/news/news-2.png") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .news-wrap__third {
   background: url("../img/news/news-3.png") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .news-wrap__text {
-  margin: 230px 103px 30px 30px;
+  display: none;
+  margin: 220px 90px 21px 30px;
 }
 
 .news-wraps {

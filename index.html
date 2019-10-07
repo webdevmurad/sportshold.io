@@ -365,7 +365,7 @@
                 </div>
 
                 <div class="feedback-texts">
-                    <div class="feedback-text__feedback" id="test-1">
+                    <div class="feedback-text__feedback feedback-text__first">
                         “Lorem ipsum dolor sit amet, 
                         consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt 
@@ -380,7 +380,7 @@
                         cupidatat non proident, sunt in culpa 
                         qui officia deserunt mollit anim id est laborum.”
                     </div>
-                    <div class="feedback-text__feedback" id="test-2">
+                    <div class="feedback-text__feedback feedback-text__second" id="test-2">
                         “Lorem ipsum dolor sit amet, 
                         consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt 
@@ -395,7 +395,7 @@
                         cupidatat non proident, sunt in culpa 
                         qui officia deserunt mollit anim id est laborum.”
                     </div>
-                    <div class="feedback-text__feedback" id="test-3">
+                    <div class="feedback-text__feedback feedback-text__third" id="test-3">
                         “Lorem ipsum dolor sit amet, 
                         consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt 
@@ -462,5 +462,15 @@
     
     <script src="./script.js"></script>
     <script src="./jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.feedback-text__feedback').not(':first').hide();
+            $('.feedback-blocks .feedback-block').click(function() {
+                $('.feedback-blocks .feedback-block').removeClass('active').eq($(this).index()).addClass('active');
+                $('.feedback-text__feedback').hide().eq($(this).index()).fadeIn()
+            }).eq(0).addClass('active');
+        });
+    </script>
 </body>
 </html>
