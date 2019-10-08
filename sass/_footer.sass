@@ -1,0 +1,25 @@
+.footer
+    background-color: #623232
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 50px
+        padding-bottom: 50px
+    &-text 
+        color: #ffffff
+        font-family: "Trueno Lt"
+        font-size: 16px
+        font-weight: 400
+        line-height: 36px
+    &-logs
+        display: flex
+        align-items: center
+    &-logs img
+        margin-right: 30px
+        &:last-child
+            margin-right: 0px
+@media (max-width: 768px)
+    .footer
+        &-block
+            flex-direction: column
