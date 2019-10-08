@@ -127,41 +127,41 @@
 
 .head-burger {
   display: block;
-  height: 8px;
-  width: 30px;
+  height: 6px;
+  width: 40px;
   position: absolute;
   margin-left: -15px;
   left: 50%;
   top: 50%;
-  background-color: black;
+  background-color: #ffffff;
   border-radius: 0.3rem;
 }
 
 .head-burger:before {
   content: '';
   display: block;
-  height: 8px;
-  width: 30px;
+  height: 6px;
+  width: 40px;
   position: absolute;
-  margin-left: -15px;
+  margin-left: -20px;
   left: 50%;
   margin-top: -14px;
   border-radius: 0.3rem;
-  background-color: black;
+  background-color: #ffffff;
 }
 
 .head-burger:after {
   content: '';
   display: block;
-  height: 8px;
-  width: 30px;
+  height: 6px;
+  width: 40px;
   position: absolute;
   left: 50%;
-  margin-left: -15px;
+  margin-left: -20px;
   top: 50%;
   margin-top: 10px;
   border-radius: 0.3rem;
-  background-color: black;
+  background-color: #ffffff;
 }
 
 .dollar {
