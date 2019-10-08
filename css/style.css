@@ -1581,4 +1581,325 @@
     padding: 10px;
   }
 }
+
+.navigation {
+  background-color: #623232;
+}
+
+.navigation-block {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #744949;
+}
+
+.navigation-tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation-tel img {
+  padding: 18px;
+  background-color: #ff7373;
+}
+
+.navigation-tel__text {
+  margin-left: 20px;
+}
+
+.navigation-tel__text h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #ff7373;
+  font-family: "Trueno Bd";
+  text-transform: uppercase;
+}
+
+.navigation-tel__text a {
+  color: #ffffff;
+  font-family: "Trueno Lt";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+.navigation-tel__text a:hover {
+  color: yellow;
+}
+
+.navigation-mail img {
+  padding: 18px;
+  background-color: #ff7373;
+  height: 20px;
+}
+
+.navigation-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.navigation-mail__text {
+  margin-left: 20px;
+}
+
+.navigation-mail__text h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #ff7373;
+  font-family: "Trueno Bd";
+  text-transform: uppercase;
+}
+
+.navigation-mail__text a {
+  color: #ffffff;
+  font-family: "Trueno Lt";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+.navigation-mail__text a:hover {
+  color: yellow;
+}
+
+.navigation-address img {
+  padding: 18px;
+  background-color: #ff7373;
+}
+
+.navigation-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.navigation-address__text {
+  margin-left: 20px;
+}
+
+.navigation-address__text h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #ff7373;
+  font-family: "Trueno Bd";
+  text-transform: uppercase;
+}
+
+.navigation-address__text a {
+  color: #ffffff;
+  font-family: "Trueno Lt";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+.navigation-address__text a:hover {
+  color: yellow;
+}
+
+.navigation-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation-menu__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation-menu__links a {
+  font-family: "Trueno Lt";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-menu__links a:hover {
+  color: yellow;
+}
+
+.navigation-menu h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #ff7373;
+  font-family: "Trueno Bd";
+  text-transform: uppercase;
+}
+
+.navigation-categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation-categories__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation-categories__links a {
+  font-family: "Trueno Lt";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-categories__links a:hover {
+  color: yellow;
+}
+
+.navigation-categories h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #ff7373;
+  font-family: "Trueno Bd";
+  text-transform: uppercase;
+}
+
+.navigation-sales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation-sales__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation-sales__links a {
+  font-family: "Trueno Lt";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-sales__links a:hover {
+  color: yellow;
+}
+
+.navigation-sales h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #ff7373;
+  font-family: "Trueno Bd";
+  text-transform: uppercase;
+}
+
+.navigation-support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation-support__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation-support__links a {
+  font-family: "Trueno Lt";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-support__links a:hover {
+  color: yellow;
+}
+
+.navigation-support h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #ff7373;
+  font-family: "Trueno Bd";
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .navigation-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 /*# sourceMappingURL=style.css.map */
