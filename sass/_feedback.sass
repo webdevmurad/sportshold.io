@@ -76,3 +76,72 @@
     color: #ffffff
 .active .feedback-star
     filter: grayscale(0%)
+
+@media (max-width: 1110px)
+    .feedback
+        &-text
+            &__first
+                &:after
+                    left: 30.3%
+            &__second
+                &:after
+                    left: 49.6%
+            &__third
+                &:after
+                    left: 67.2%
+@media (max-width: 990px)
+    .feedback
+        &-text
+            &__first
+                &:after
+                    left: 24.8%
+            &__second
+                &:after
+                    left: 49.6%
+            &__third
+                &:after
+                    left: 72.2%
+@media (max-width: 768px)
+    .feedback
+        &-name
+            text-align: center
+        &-stars img 
+            width: 15px
+            height: 15px
+        &-text
+            &__feedback
+                padding: 30px 25px
+            &__first
+                &:after
+                    left: 10%
+            &__second
+                &:after
+                    left: 48.5%
+            &__third
+                &:after
+                    left: 83.6%
+@media (max-width: 425px)
+    .feedback
+        &-name
+            font-size: 14px
+            line-height: 20px
+        &-block
+            margin-right: 5px
+        &-stars img 
+            width: 10px
+            height: 10px
+        &-text
+            &__feedback
+                padding: 20px 20px
+                font-size: 12px 
+                line-height: 20px
+            &__first
+                &:after
+                    left: 11%
+            &__second
+                &:after
+                    left: 47.5%
+            &__third
+                &:after
+                    left: 80%
+

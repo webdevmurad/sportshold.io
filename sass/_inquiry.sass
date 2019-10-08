@@ -1,0 +1,59 @@
+.inquiry
+    background-color: #ff7373
+    &-block
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 70px
+        padding-bottom: 70px
+        &__left
+            display: flex
+            align-items: center
+        &__text
+            margin-left: 30px
+        &__text h2 
+            margin: 0
+            color: #ffffff
+            font-family: "Trueno Bd"
+            font-size: 30px
+            font-weight: 400
+            text-transform: uppercase
+        &__text p 
+            margin: 0
+            color: #ffffff
+            font-family: "Trueno Lt"
+            font-size: 16px
+            font-weight: 400
+            line-height: 26px
+        &__right a
+            background: #623232
+            padding: 17px 30px
+            color: #ffffff
+            text-decoration: none
+            font-family: "Trueno Bd"
+            font-size: 16px
+            font-weight: 400
+            line-height: 26px
+            text-transform: uppercase
+            &:hover
+                color: yellow
+@media (max-width: 990px)
+    .inquiry
+        &-block
+            flex-direction: column
+            &__right
+                margin-top: 30px
+            &__text h2 
+                font-size: 25px
+            &__text p 
+                font-size: 13px
+@media (max-width: 768px)
+    .inquiry
+        &-block
+            &__text h2 
+                font-size: 20px
+            &__text p 
+                font-size: 10px
+                line-height: 20px
+            &__right a 
+                font-size: 13px

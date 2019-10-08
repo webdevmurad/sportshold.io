@@ -1230,6 +1230,80 @@
           filter: grayscale(0%);
 }
 
+@media (max-width: 1110px) {
+  .feedback-text__first:after {
+    left: 30.3%;
+  }
+  .feedback-text__second:after {
+    left: 49.6%;
+  }
+  .feedback-text__third:after {
+    left: 67.2%;
+  }
+}
+
+@media (max-width: 990px) {
+  .feedback-text__first:after {
+    left: 24.8%;
+  }
+  .feedback-text__second:after {
+    left: 49.6%;
+  }
+  .feedback-text__third:after {
+    left: 72.2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback-name {
+    text-align: center;
+  }
+  .feedback-stars img {
+    width: 15px;
+    height: 15px;
+  }
+  .feedback-text__feedback {
+    padding: 30px 25px;
+  }
+  .feedback-text__first:after {
+    left: 10%;
+  }
+  .feedback-text__second:after {
+    left: 48.5%;
+  }
+  .feedback-text__third:after {
+    left: 83.6%;
+  }
+}
+
+@media (max-width: 425px) {
+  .feedback-name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .feedback-block {
+    margin-right: 5px;
+  }
+  .feedback-stars img {
+    width: 10px;
+    height: 10px;
+  }
+  .feedback-text__feedback {
+    padding: 20px 20px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .feedback-text__first:after {
+    left: 11%;
+  }
+  .feedback-text__second:after {
+    left: 47.5%;
+  }
+  .feedback-text__third:after {
+    left: 80%;
+  }
+}
+
 .news-block {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1306,7 +1380,7 @@
 }
 
 .news-wrap__text {
-  display: none;
+  display: block;
   margin: 220px 90px 21px 30px;
 }
 
@@ -1333,5 +1407,132 @@
   font-weight: 400;
   line-height: 26px;
   font-family: "Trueno Lt";
+}
+
+@media (max-width: 1110px) {
+  .news-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 990px) {
+  .news-wraps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .news-wrap {
+    width: 300px;
+    height: 300px;
+  }
+  .news-wrap__text {
+    margin-top: 171px;
+  }
+}
+
+.inquiry {
+  background-color: #ff7373;
+}
+
+.inquiry-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.inquiry-block__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inquiry-block__text {
+  margin-left: 30px;
+}
+
+.inquiry-block__text h2 {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Trueno Bd";
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.inquiry-block__text p {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Trueno Lt";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.inquiry-block__right a {
+  background: #623232;
+  padding: 17px 30px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Trueno Bd";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.inquiry-block__right a:hover {
+  color: yellow;
+}
+
+@media (max-width: 990px) {
+  .inquiry-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .inquiry-block__right {
+    margin-top: 30px;
+  }
+  .inquiry-block__text h2 {
+    font-size: 25px;
+  }
+  .inquiry-block__text p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inquiry-block__text h2 {
+    font-size: 20px;
+  }
+  .inquiry-block__text p {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .inquiry-block__right a {
+    font-size: 13px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -46,7 +46,7 @@
             background-size: cover
             background-position: center
         &__text
-            display: none
+            display: block
             margin: 220px 90px 21px 30px
     &-wraps
         margin-top: 30px
@@ -65,4 +65,26 @@
         font-weight: 400
         line-height: 26px
         font-family: "Trueno Lt"
+
+@media (max-width: 1110px)
+    .news
+        &-text
+            font-size: 13px
+        &-wrap
+            &__text
+@media (max-width: 990px)
+    .news
+        &-wraps
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+@media (max-width: 425px)
+    .news
+        &-wrap
+            width: 300px
+            height: 300px
+            &__text
+                margin-top: 171px
+
     
