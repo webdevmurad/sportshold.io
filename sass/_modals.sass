@@ -1,0 +1,93 @@
+.overlay
+    &-header
+        display: none
+        position: fixed
+        top: 0
+        width: 100%
+        height: 100%
+        background: rgba(255, 115, 115, 0.3);
+        transition: 2s
+        z-index: 99
+.popup
+    &-header
+        width: 100%
+        max-height: 100%
+        overflow-y: auto
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        position: fixed
+    &-block
+        position: relative
+        width: 400px
+        height: 500px
+        margin: auto
+        background: #623232
+        display: flex
+        flex-direction: column
+    &-close 
+        position: absolute
+        top: 2.6%
+        right: 5%
+
+    &-img 
+        text-align: center
+        padding: 10px
+        border: 2px solid #4A2121
+        background: #6E3232
+    &-links
+        margin-top: 30px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        font-family: "Trueno Lt"
+        font-size: 30px
+        font-weight: 400 
+    &-links a 
+        color: #ffffff
+        text-decoration: none
+        margin-top: 15px
+        &:hover
+            color: #ff7373
+    &-login
+        margin-top: 50px
+        text-decoration: none
+        text-align: center
+        font-family: "Trueno Bd"
+        font-size: 16px
+        font-weight: 400
+        line-height: 26px
+        text-transform: uppercase
+    &-login a 
+        border: 2px solid #4A2121
+        color: #ffffff
+        padding: 20px 40px
+        text-decoration: none
+        background-color: #ff7373
+        &:hover
+            color: yellow
+            border: 2px solid yellow
+    &-register
+        margin-top: 50px
+        text-decoration: none
+        text-align: center
+        font-family: "Trueno Bd"
+        font-size: 16px
+        font-weight: 400
+        line-height: 26px
+        text-transform: uppercase
+    &-register a 
+        border: 2px solid #4A2121
+        color: #ffffff
+        padding: 20px 40px
+        text-decoration: none
+        background-color: #ff7373
+        &:hover
+            color: yellow
+            border: 2px solid yellow
+@media (max-width: 425px)
+    .popup
+        &-block
+            width: 90%
+        
