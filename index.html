@@ -89,6 +89,26 @@
             </div>
         </div>
 
+        <div class="overlay-subheader">
+            <div class="popup-subheader">
+                <div class="popup-subheader__block">
+                    <div class="popup-subheader__img">
+                        <img src="./img/modals/Logo.png" alt="#">
+                    </div>
+                    <img src="./img/modals/close.png" alt="#" class="popup-subheader__close">
+                    <div class="popup-subheader__links">
+                        <div class="popup-subheader__link"><a href="#">Home</a></div>
+                        <div class="popup-subheader__link"><a href="#">Men</a></div>
+                        <div class="popup-subheader__link"><a href="#">Women</a></div>
+                        <div class="popup-subheader__link"><a href="#">Children</a></div>
+                        <div class="popup-subheader__link"><a href="#">Baby</a></div>
+                        <div class="popup-subheader__link"><a href="#">Our Brands</a></div>
+                        <div class="popup-subheader__link"><a href="#">Sales</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <main>
@@ -628,12 +648,35 @@
 
     <script>
         $(document).ready(function() {
+
+            // feedback табы
             $('.feedback-text__feedback').not(':first').hide();
             $('.feedback-blocks .feedback-block').click(function() {
                 $('.feedback-blocks .feedback-block').removeClass('active').eq($(this).index()).addClass('active');
                 $('.feedback-text__feedback').hide().eq($(this).index()).fadeIn()
             }).eq(0).addClass('active');
+            
+            //header бургер меню
+            $('.header-burger').click(function() {
+                $('.overlay-header').addClass('overlay-header__active');
+                $('.popup-block').addClass('popup-active');
+            });
+            $('.popup-close').click(function() {
+                $('.overlay-header').removeClass('overlay-header__active');
+                $('.popup-block').removeClass('popup-active');
+            });
+
+            // subheader бургер меню
+            $('.subheader-burger').click(function() {
+                $('.overlay-subheader').addClass('overlay-subheader__active');
+                $('.popup-subheader__block').addClass('popup-subheader__active');
+            });
+            $('.popup-subheader__close').click(function() {
+                $('.overlay-subheader').removeClass('overlay-subheader__active');
+                $('.popup-subheader__block').removeClass('popup-subheader__active');
+            });
         });
     </script>
+
 </body>
 </html>
