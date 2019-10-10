@@ -1,0 +1,87 @@
+.overlay
+    &-modal
+        display: none
+        position: fixed
+        top: 0
+        width: 100%
+        height: 100%
+        background: rgba(255, 115, 115, 0.3)
+        z-index: 99
+        &__active 
+            display: block
+.modal
+    width: 100%
+    max-height: 100%
+    overflow-y: auto
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    position: fixed
+    &-block
+        left: 0
+        position: relative
+        max-width: 900px
+        max-height: 600px
+        margin: auto
+        background: #623232
+        display: flex
+        flex-direction: column
+    &-header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 20px
+        background: #6E3232
+        border: 2px solid #4A2121
+    &-header h2 
+        color: #ff7373
+        font-family: "Trueno Bd"
+        font-size: 30px
+        font-weight: 400
+        text-transform: uppercase
+    &-close
+        &:hover
+            cursor: pointer
+    &-wrap
+        background: #ffffff
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        margin: 20px
+    &-text
+        padding: 130px 50px
+    &-text p 
+        color: #ff7373
+        font-family: "Trueno Bd"
+        font-size: 30px 
+    &-btn
+        display: flex
+        justify-content: flex-end
+        margin-bottom: 10px
+    &-btn a 
+        padding: 20px
+        color: #ffffff
+        font-family: "Trueno Bd"
+        font-size: 16px
+        text-decoration: none
+        text-transform: uppercase
+        background-color: #ff7373
+        margin-right: 20px
+@media (max-width: 990px)
+    .modal
+        &-block
+            width: 700px
+@media (max-width: 768px)
+    .modal
+        &-block
+            width: 90%
+        &-text
+            text-align: center
+            padding: 110px 25px
+@media (max-width: 425px)
+    .modal
+        &-btn
+            justify-content: center
+        &-btn a
+            margin-right: 0px

@@ -13,7 +13,7 @@
 
     <header>
 
-        <section class="header">
+        <div class="header">
             <div class="container">
                <div class="header-block">
                     <div class="header-burger">
@@ -42,9 +42,9 @@
                     </div>
                </div>
             </div>
-        </section>
+        </div>
 
-        <section class="subheader">
+        <div class="subheader">
             <div class="container">
                 <div class="subheader-block">
                     
@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <div class="overlay-header">
             <div class="popup-header">
@@ -105,6 +105,25 @@
                         <div class="popup-subheader__link"><a href="#">Baby</a></div>
                         <div class="popup-subheader__link"><a href="#">Our Brands</a></div>
                         <div class="popup-subheader__link"><a href="#">Sales</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay-modal">
+            <div class="modal">
+                <div class="modal-block">
+                    <div class="modal-header">
+                        <h2>Basket</h2>
+                        <img src="./img/modal/close.png" alt="#" class="modal-close">
+                    </div>
+                    <div class="modal-wrap">
+                        <div class="modal-text">
+                            <p>Ваша корзина пока пуста</p>
+                        </div>
+                    </div>
+                    <div class="modal-btn">
+                        <a href="#">Оформить заказ</a>
                     </div>
                 </div>
             </div>
@@ -356,7 +375,7 @@
             </div>
         </section>
 
-        <section class="brands">
+        <div class="brands">
             <div class="container">
                 <div class="brands-block wow fadeInUp">
                     <div class="brand-block"><img src="./img/brands/adidas.png" alt="#" class="brand-img"></div>
@@ -367,9 +386,9 @@
                     <div class="brand-block"><img src="./img/brands/fila.png" alt="#" class="brand-img"></div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="feedback">
+        <div class="feedback">
             <div class="container">
 
                 <div class="feedback-blocks">
@@ -457,7 +476,7 @@
                 </div>
 
             </div>
-        </section>
+        </div>
 
         <section class="news">
             <div class="container">
@@ -626,13 +645,14 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer>
         <div class="container">
             <div class="footer-block">
                 <img src="./img/footer/footer-logo.png" alt="#">
-                <p class="footer-text">© 2017 Sportshold. All rights reserved.</p>
+                <p class="footer-text">© 2019 Sportshold. All rights reserved.</p>
                 <div class="footer-logs">
                     <img src="./img/footer/logo-1.png" alt="#">
                     <img src="./img/footer/logo-2.png" alt="#">
@@ -678,6 +698,13 @@
             $('.popup-subheader__close').click(function() {
                 $('.overlay-subheader').removeClass('overlay-subheader__active');
                 $('.popup-subheader__block').removeClass('popup-subheader__active');
+            });
+
+            $('.header-nav__basket').click(function() {
+                $('.overlay-modal').addClass('overlay-modal__active');
+            });
+            $('.modal-close').click(function() {
+                $('.overlay-modal').removeClass('overlay-modal__active');
             });
         });
     </script>
