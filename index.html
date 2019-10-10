@@ -7,6 +7,7 @@
     <title>sportshold</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
 <body>
 
@@ -117,10 +118,10 @@
             <div class="presentation-blocks">
 
                 <div class="presentation-block__img">
-                    <img class="presentation-block__shoes" src="./img/presentation/Layer_2.png" alt="#">
+                    <img class="presentation-block__shoes wow fadeInLeft" src="./img/presentation/Layer_2.png" alt="#">
                 </div>
 
-                <div class="presentation-block__text">
+                <div class="presentation-block__text wow fadeInRight">
                     <div class="presentation-text__price"><p>From $80.00</p></div>
                     <div class="presentation-text__title"><h1>Nike Air Max</h1></div>
                     <div class="presentation-text__subtitle"><h2>50 Variants</h2></div>
@@ -160,7 +161,7 @@
                                 <div class="trend-discover__btn"><a>DISCOVER</a></div>
                             </div>
                         </div>
-                        <div class="trend-block__footer">
+                        <div class="trend-block__footer wow fadeInUp">
                             <div class="trend-block__athletes">
                                 <div class="trend-athletes__text"><h3>Best for</h3></div>
                                 <div class="trend-athletes__title"><h2>Athletes</h2></div>
@@ -188,7 +189,7 @@
 
                     <div class="goods-blocks">
 
-                        <div class="goods-sneakers">
+                        <div class="goods-sneakers wow fadeInLeft">
                             <div class="goods-cost">
                                 <div class="goods-price">
                                     <div class="goods-price__new">
@@ -214,7 +215,7 @@
                             </div>
                         </div>
 
-                        <div class="goods-sneakers">
+                        <div class="goods-sneakers wow fadeInLeft">
                             <div class="goods-cost">
                                 <div class="goods-old__price">
                                     <p>$55.00</p>
@@ -231,7 +232,7 @@
                             </div>
                         </div>
 
-                        <div class="goods-sneakers">
+                        <div class="goods-sneakers wow fadeInRight">
                             <div class="goods-cost">
                                 <div class="goods-price">
                                     <div class="goods-price__new">
@@ -256,7 +257,7 @@
                             </div>
                         </div>
 
-                        <div class="goods-sneakers">
+                        <div class="goods-sneakers wow fadeInRight">
                             <div class="goods-cost">
                                 <div class="goods-old__price">
                                     <p>$55.00</p>
@@ -273,7 +274,7 @@
                             </div>
                         </div>
 
-                        <div class="goods-sneakers">
+                        <div class="goods-sneakers wow fadeInLeft">
                             <div class="goods-cost">
                                 <div class="goods-old__price">
                                     <p>$90.00</p>
@@ -290,7 +291,7 @@
                             </div>
                         </div>
 
-                        <div class="goods-sneakers">
+                        <div class="goods-sneakers wow fadeInLeft">
                             <div class="goods-cost">
                                 <div class="goods-price">
                                     <div class="goods-price__new">
@@ -315,7 +316,7 @@
                             </div>
                         </div>
 
-                        <div class="goods-sneakers">
+                        <div class="goods-sneakers wow fadeInRight">
                             <div class="goods-cost">
                                 <div class="goods-old__price">
                                     <p>$40.00</p>
@@ -332,7 +333,7 @@
                             </div>
                         </div>
 
-                        <div class="goods-sneakers">
+                        <div class="goods-sneakers wow fadeInRight">
                             <div class="goods-cost">
                                 <div class="goods-old__price">
                                     <p>$80.00</p>
@@ -357,7 +358,7 @@
 
         <section class="brands">
             <div class="container">
-                <div class="brands-block">
+                <div class="brands-block wow fadeInUp">
                     <div class="brand-block"><img src="./img/brands/adidas.png" alt="#" class="brand-img"></div>
                     <div class="brand-block"><img src="./img/brands/nike.png" alt="#" class="brand-img"></div>
                     <div class="brand-block"><img src="./img/brands/puma.png" alt="#" class="brand-img"></div>
@@ -463,7 +464,7 @@
                 <div class="news-block">
                     <h2>LATEST NEWS</h2>
                     <div class="news-wraps">
-                        <div class="news-wrap news-wrap__first">  
+                        <div class="news-wrap news-wrap__first wow fadeInLeft">  
                             <div class="news-wrap__text">
                                 <p class="news-data">DEC 27, 2017</p>
                                 <p class="news-text">Lorem ipsum dolor sit amet
@@ -474,7 +475,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="news-wrap news-wrap__second">
+                        <div class="news-wrap news-wrap__second wow fadeInUp">
                             <div class="news-wrap__text">
                                 <p class="news-data">DEC 27, 2017</p>
                                 <p class="news-text">Lorem ipsum dolor sit amet
@@ -485,7 +486,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="news-wrap news-wrap__third">
+                        <div class="news-wrap news-wrap__third wow fadeInRight">
                             <div class="news-wrap__text">
                                 <p class="news-data">DEC 27, 2017</p>
                                 <p class="news-text">Lorem ipsum dolor sit amet
@@ -645,8 +646,11 @@
     
     <script src="./script.js"></script>
     <script src="./jquery.min.js"></script>
+    <script src="./wow.min.js"></script>
 
     <script>
+        new WOW().init();
+
         $(document).ready(function() {
 
             // feedback табы
