@@ -929,6 +929,11 @@
   font-family: "Trueno Bd";
 }
 
+.goods-active h2 {
+  color: #623232;
+  font-family: "Trueno Bd";
+}
+
 .goods-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
