@@ -172,7 +172,7 @@
   line-height: 26px;
 }
 
-.price {
+.price-span {
   margin-right: 5px;
   color: #ffffff;
   font-family: "Trueno Lt";
@@ -946,8 +946,7 @@
   position: relative;
   width: 255px;
   border: 1px solid #e0dfde;
-  margin-right: 19px;
-  margin-top: 30px;
+  margin: 10px;
 }
 
 .goods-sneakers:hover {
@@ -1031,7 +1030,7 @@
   margin-right: 20px;
 }
 
-.goods-button__bye {
+.goods-button__buy {
   border: none;
   font-family: "Trueno Lt";
   padding: 10px 20px;
@@ -2241,7 +2240,7 @@ footer {
   left: 0;
   position: relative;
   max-width: 900px;
-  max-height: 600px;
+  min-height: 600px;
   margin: auto;
   background: #623232;
   display: -webkit-box;
@@ -2290,9 +2289,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 20px;
 }
 
